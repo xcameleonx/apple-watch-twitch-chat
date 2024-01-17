@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+
+
+.apple-watch-viewport {
+    font-family: 'Roboto';
+    background-color: black;
+    color: white;
+    max-width: 352px;
+    max-height: 480px;
+    overflow-y: scroll;
+}
+
+.chat-logs {
+    list-style: none;
+    padding-left: 5%;
+}
+
+.chat-logs li .description {
+    text-wrap: wrap;
+}
