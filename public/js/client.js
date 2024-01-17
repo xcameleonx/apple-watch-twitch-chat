@@ -8,7 +8,7 @@ fetch('/settings').then(function (response) {
 	// The API call was successful!
 	return response.json();
 }).then(function(data) {
-    console.log(data);
+
     settings = data;
     const opts = {
         channels: [
@@ -36,11 +36,11 @@ fetch('/settings').then(function (response) {
 
 // Called every time a message comes in
 function onMessageHandler(target, context, msg, self) {
-    // Remove whitespace from chat message
+    // If we have a chat that is too long, just remove the first one.
     if(chat.length >= settings.backlog_count) {
      chat.shift();
-
     }
+
     chat.push({context, msg, color: getRandomColor() });
     createListWithTemplate(chat);
 }

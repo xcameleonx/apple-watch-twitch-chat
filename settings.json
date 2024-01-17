@@ -1,5 +1,5 @@
 {
     "port": 8080,
-    "channel": "<channel_name>",
+    "channel": "zachbussey",
     "backlog_count": 10
 }
